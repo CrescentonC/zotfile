@@ -791,8 +791,8 @@ Zotero.ZotFile = new function() {
             // rename attachment
             att = yield this.renameAttachment(att);
             // remove file from source folder
-            if (path != att.getFilePath())
-                OS.File.remove(path);
+            // if (path != att.getFilePath())
+                // OS.File.remove(path);
         }
         // create linked attachment
         else {
