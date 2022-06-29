@@ -11,6 +11,7 @@
 		<!-- Make sure the menu separator for utilities is visible -->
        	<!--insertafter="id-zotfile-menu" -->
        	<menuitem id="id-zotfile-attach-file" label="&zotfile-attach-file.label;" tooltiptext="&zotfile-attach-file.tooltiptext;" oncommand="Zotero.ZotFile.attachFileFromSourceDirectory();"/>
+       	<menuitem id="id-zotfile-open-with-default" label="&zotfile-open-with-default.label;" tooltiptext="&zotfile-open-with-default.tooltiptext;" oncommand="Zotero.ZotFile.openPdfUsingSystemViewer();"/>
  		<menu id="id-zotfile-manage-attachments" label="&zotfile-manage-attachments.label;" > 
 			<menupopup id="id-zotfile-menu" onpopupshowing="Zotero.ZotFile.UI.buildZotFileMenu();">
 				<menuitem label="&warning.label;" disabled="true" style="font-size: 100%; background: none; -moz-appearance: none;"/>							

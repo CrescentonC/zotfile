@@ -1,4 +1,6 @@
-﻿<!ENTITY zotfile-attach-file.label "Joindre un nouveau fichier">
+﻿<!ENTITY zotfile-open-with-default.label "Open Using System Viewer">
+<!ENTITY zotfile-open-with-default.tooltiptext "Open Using System Viewer">
+<!ENTITY zotfile-attach-file.label "Joindre un nouveau fichier">
 <!ENTITY zotfile-attach-file.tooltiptext "Déplace et joint au document sélectionné le dernier fichier du dossier défini par l'utilisateur">
 <!ENTITY zotfile-manage-attachments.label "Gérer les pièces jointes">
 <!ENTITY warning.label "Avertissement">

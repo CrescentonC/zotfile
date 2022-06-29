@@ -1,3 +1,5 @@
+<!ENTITY zotfile-open-with-default.label "Open Using System Viewer">
+<!ENTITY zotfile-open-with-default.tooltiptext "Open Using System Viewer">
 <!ENTITY zotfile-attach-file.label "Allega Nuovo File">
 <!ENTITY zotfile-attach-file.tooltiptext "Sposta e allega l'ultimo file nella cartella definita dall'utente all'oggetto selezionato in Zotero">
 <!ENTITY zotfile-manage-attachments.label "Gestisci Allegati">

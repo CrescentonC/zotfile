@@ -50,6 +50,7 @@ Zotero.ZotFile.UI = new function() {
         // show or hide zotfile menu items
         pane.document.getElementById("id-zotfile-separator").hidden = !show_menu;
         pane.document.getElementById("id-zotfile-attach-file").hidden = !show_menu;
+        pane.document.getElementById("id-zotfile-open-with-default").hidden = !show_menu;
         pane.document.getElementById("id-zotfile-manage-attachments").hidden = !show_menu;
     }.bind(Zotero.ZotFile);
 

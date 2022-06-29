@@ -39,6 +39,31 @@ Zotero.ZotFile = new function() {
     var _initialized = false;
 
     /**
+     * Added by Cresc, to open pdf file using system default viewer
+    */
+    this.openPdfUsingSystemViewer = async function() {
+        // Get first selected item
+        var selectedItems = ZoteroPane.getSelectedItems();
+        var item = selectedItems[0];
+
+        // Proceed if an item is selected and it isn't a note
+        if (item && !item.isNote()) {
+            if (item.isAttachment()) {
+                let p = item.getFilePath();
+                await Zotero.Utilities.Internal.exec("C:\\Program Files\\Tracker Software\\PDF Editor\\PDFXEdit.exe", [p])
+            }
+            if (item.isRegularItem()) {
+                // Grab attachments:
+                let attachmentIDs = item.getAttachments();
+                let attachment = Zotero.Items.get(attachmentIDs[0]);
+                let p = attachment.getFilePath();
+                await Zotero.Utilities.Internal.exec("C:\\Program Files\\Tracker Software\\PDF Editor\\PDFXEdit.exe", [p])
+            }
+        }
+    }
+    
+
+    /**
      * Zotfile version changed, open webpage, make adjustments
      * @param  {string} version Current zotfile version
      * @return {void}
